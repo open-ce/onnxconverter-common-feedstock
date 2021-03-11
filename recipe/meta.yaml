@@ -1,5 +1,5 @@
 {% set name = "onnxconverter-common" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/microsoft/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 704d73f43eb55946ee482a68979ae8019e3226fc921659e879bfc6767f456d2b
+  sha256: e2f01dd504bae4238bcb7000976412d232fc1f4253ecd09a6c1e1acb1a676a4c
 
 build:
   number: 0
