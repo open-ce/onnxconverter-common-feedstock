@@ -11,19 +11,19 @@ source:
   sha256: f95f2a2d1fedc20cccbc820d4f63cbe84e287a5bd8c863ced400ae73946e13e6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
   run:
-    - python >=3.6
-    - numpy
-    - protobuf
-    - onnx
+    - python
+    - numpy {{ numpy }}
+    - protobuf {{ protobuf }}
+    - onnx {{ onnx }}
 
 test:
   imports:
@@ -41,4 +41,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - xhochy
+    - open-ce/open-ce-dev-team
