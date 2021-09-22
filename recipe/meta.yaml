@@ -11,10 +11,10 @@ source:
   sha256: f95f2a2d1fedc20cccbc820d4f63cbe84e287a5bd8c863ced400ae73946e13e6
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  string: py_pb{{ protobuf | replace(".*", "")}}_{{ PKG_BUILDNUM }}
+  string: pyh{{ PKG_HASH }}_pb{{ protobuf | replace(".*", "")}}_{{ PKG_BUILDNUM }}
 
 requirements:
   host:
