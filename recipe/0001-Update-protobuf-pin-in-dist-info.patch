@@ -1,0 +1,36 @@
+From a67587f2a0519c233f61b9d2980071527353a194 Mon Sep 17 00:00:00 2001
+From: Nishidha Panpaliya <npanpa23@in.ibm.com>
+Date: Thu, 24 Aug 2023 18:05:25 +0000
+Subject: [PATCH] Update protobuf pin in dist info
+
+---
+ pyproject.toml   | 2 +-
+ requirements.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index bc22188..e7c458d 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -24,7 +24,7 @@ classifiers = [
+   "Programming Language :: Python :: 3.11",
+   "License :: OSI Approved :: MIT License",
+ ]
+-dependencies = ["numpy", "onnx", "packaging", "protobuf==3.20.2"]
++dependencies = ["numpy", "onnx", "packaging", "protobuf>=3.20.2"]
+ 
+ [tool.setuptools.dynamic]
+ version = {attr = "onnxconverter_common.__version__"}
+diff --git a/requirements.txt b/requirements.txt
+index 03a553f..4e27326 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -1,4 +1,4 @@
+ numpy
+ onnx
+ packaging
+-protobuf==3.20.2
++protobuf>=3.20.2
+-- 
+2.40.1
+
